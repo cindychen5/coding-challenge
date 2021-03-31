@@ -115,9 +115,6 @@ let array = [{platform: 'Facebook', url: 'facebook.com/mike_jones'}, {
     platform: 'Instagram',
     url: 'instagram.com/flexas_jones'
 }, {platform: 'Twitter', url: 'twitter.com/houston_flexas'}]
-// console.log(array)
-// let url = array[0]['url']
-// console.log(url)
 
 // test examples
 // let array = [{platform: 'Instagram', url: 'instagram.com/mike_jones'}, {
@@ -192,8 +189,6 @@ console.log(typeof grabTwitterUrl())
 //     url: 'twitter.com/flexas_jones'
 // }, {platform: 'Facebook', url: 'twitter.com/houston_flexas'}]
 
-// console.log(array)
-
 function grabFirstInstagram() {
     for (let i = 0; i < array.length; i++) {
         if (array[i]['platform'] === 'Instagram') {
@@ -226,7 +221,6 @@ console.log(typeof grabFirstInstagram())
 // for all the other indexes update falseAddress
 // add updated values to the updateAddresses array
 
-
 let addresses = [
     { streetNumber: '560', streetName: 'State Street', streetLocation: 'NE', city:  'Brooklyn', state: 'NY', zip: '11217' },
     { streetNumber: '1600', streetName:  'Pennsylvania Ave.', streetLocation: '', city: 'Washington DC', state: '', zip:  '20500' },
@@ -237,32 +231,12 @@ let addresses = [
 // let addresses = [
 //     { streetNumber: '560', streetName: 'State Street', streetLocation: 'NE', city:  'Brooklyn', state: 'NY', zip: '11217' },
 //     { streetNumber: '1600', streetName:  'Pennsylvania Ave.', streetLocation: '', city: 'Washington DC', state: '', zip:  '20500' },
-//     { streetNumber: '5225', streetName: 'Figueroa Mountain Road', streetLocation: 'SW', city: 'Los Olivos', state: 'CA', zip: '93441' }, { streetNumber: '505', streetName: 'Southside Rd', streetLocation: 'SW', city: 'Albuquerque', state: 'NM', zip: '87115' }
+//     { streetNumber: '5225', streetName: 'Figueroa Mountain Road', streetLocation: 'SW', city: 'Los Olivos', state: 'CA', zip: '93441' },
+//     { streetNumber: '505', streetName: 'Southside Rd', streetLocation: 'SW', city: 'Albuquerque', state: 'NM', zip: '87115' }
 // ]
 
-// let firstAddress = addresses[0]
-// let secondAddress = addresses[1]
 let trueCurrentAddress = { currentAddress: true}
 let falseCurrentAddress = { currentAddress: false }
-
-// let trueAddress = {...trueCurrentAddress, ...firstAddress}
-// console.log(trueAddress)
-// let falseAddress = {...falseCurrentAddress, ...secondAddress}
-// console.log(falseAddress)
-
-// function updateCurrentAddress() {
-//     let updateAddresses = {}
-//     for (let i = 0; i < addresses.length; i++) {
-//         if (i < 1) {
-//             return updateAddresses = {...trueCurrentAddress, ...addresses[i]}
-//         } else if (i > 0) {
-//             return updateAddresses = {...falseCurrentAddress, ...addresses[i]}
-//         }
-//     }
-//     return updateAddresses + addresses[i]
-// }
-//
-// console.log(updateCurrentAddress())
 
 function updateCurrentAddress() {
     let updateAddresses = [];
