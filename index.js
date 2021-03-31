@@ -238,7 +238,7 @@ let addresses = [
 //     { streetNumber: '560', streetName: 'State Street', streetLocation: 'NE', city:  'Brooklyn', state: 'NY', zip: '11217' },
 //     { streetNumber: '1600', streetName:  'Pennsylvania Ave.', streetLocation: '', city: 'Washington DC', state: '', zip:  '20500' },
 //     { streetNumber: '5225', streetName: 'Figueroa Mountain Road', streetLocation: 'SW', city: 'Los Olivos', state: 'CA', zip: '93441' }, { streetNumber: '505', streetName: 'Southside Rd', streetLocation: 'SW', city: 'Albuquerque', state: 'NM', zip: '87115' }
-]
+// ]
 
 // let firstAddress = addresses[0]
 // let secondAddress = addresses[1]
