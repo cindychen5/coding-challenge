@@ -15,6 +15,11 @@
 
 let phoneNumber = '(281) 330-8004';
 
+// test example
+// let phoneNumber = '(123)456-7890';
+// let phoneNumber = '345-768-9000';
+// let phoneNumber = '789 123 4590';
+
 function formatNumbers() {
     let numbers = phoneNumber.split('');
     let removeChar = ['(', ')', '-', ' '];
@@ -66,6 +71,15 @@ let sellerInfo = {
         }
 }
 
+// test example
+// let sellerInfo = {
+//     firstName: 'Marcus', lastName: 'Narro', phoneNumber: '(780) 256-8762', address:
+//         {
+//             streetNumber: '12', streetName: 'Northwest Street', streetLocation: 'NW', city:
+//                 'Queens', state: 'NY', zip: '11355'
+//         }
+// }
+
 let address = sellerInfo.address
 let fullAddress = address.streetNumber + ' ' + address.streetName + ' ' + address.streetLocation + ', ' + address.city + ' ' + address.state + ', ' + address.zip;
 
@@ -105,6 +119,30 @@ let array = [{platform: 'Facebook', url: 'facebook.com/mike_jones'}, {
 // let url = array[0]['url']
 // console.log(url)
 
+// test examples
+// let array = [{platform: 'Instagram', url: 'instagram.com/mike_jones'}, {
+//     platform: 'Twitter',
+//     url: 'twitter.com/jonesM'
+// }, {platform: 'Twitter', url: 'twitter.com/jonesmike '}, {
+//     platform: 'Twitter',
+//     url: 'twitter.com/flexas_mike'
+// }, {platform: 'Twitter', url: 'twitter.com/michael_allen_jones'}, {
+//     platform: 'Twitter',
+//     url: 'twitter.com/flexas_jones'
+// }, {platform: 'Twitter', url: 'twitter.com/houston_flexas'}]
+
+// let array = [{platform: 'Facebook', url: 'instagram.com/mike_jones'}, {
+//     platform: 'Instagram',
+//     url: 'instagram.com/jonesM'
+// }, {platform: 'Instagram', url: 'instagram.com/jonesmike '}, {
+//     platform: 'Instagram',
+//     url: 'twitter.com/flexas_mike'
+// }, {platform: 'Facebook', url: 'twitter.com/michael_allen_jones'}, {
+//     platform: 'Facebook',
+//     url: 'twitter.com/flexas_jones'
+// }, {platform: 'Facebook', url: 'twitter.com/houston_flexas'}]
+
+
 function grabTwitterUrl() {
     let url = [];
     for (let i = 0; i < array.length; i++) {
@@ -141,6 +179,18 @@ console.log(typeof grabTwitterUrl())
 //     platform: 'Instagram',
 //     url: 'instagram.com/flexas_jones'
 // }, {platform: 'Twitter', url: 'twitter.com/houston_flexas'}]
+
+// test example
+// let array = [{platform: 'Facebook', url: 'instagram.com/mike_jones'}, {
+//     platform: 'Instagram',
+//     url: 'instagram.com/jonesM'
+// }, {platform: 'Instagram', url: 'instagram.com/jonesmike '}, {
+//     platform: 'Instagram',
+//     url: 'twitter.com/flexas_mike'
+// }, {platform: 'Facebook', url: 'twitter.com/michael_allen_jones'}, {
+//     platform: 'Facebook',
+//     url: 'twitter.com/flexas_jones'
+// }, {platform: 'Facebook', url: 'twitter.com/houston_flexas'}]
 
 // console.log(array)
 
@@ -182,6 +232,13 @@ let addresses = [
     { streetNumber: '1600', streetName:  'Pennsylvania Ave.', streetLocation: '', city: 'Washington DC', state: '', zip:  '20500' },
     { streetNumber: '5225', streetName: 'Figueroa Mountain Road', streetLocation: 'SW', city: 'Los Olivos', state: 'CA', zip: '93441' }
     ]
+
+// test example
+// let addresses = [
+//     { streetNumber: '560', streetName: 'State Street', streetLocation: 'NE', city:  'Brooklyn', state: 'NY', zip: '11217' },
+//     { streetNumber: '1600', streetName:  'Pennsylvania Ave.', streetLocation: '', city: 'Washington DC', state: '', zip:  '20500' },
+//     { streetNumber: '5225', streetName: 'Figueroa Mountain Road', streetLocation: 'SW', city: 'Los Olivos', state: 'CA', zip: '93441' }, { streetNumber: '505', streetName: 'Southside Rd', streetLocation: 'SW', city: 'Albuquerque', state: 'NM', zip: '87115' }
+]
 
 // let firstAddress = addresses[0]
 // let secondAddress = addresses[1]
