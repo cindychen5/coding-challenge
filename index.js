@@ -185,8 +185,8 @@ let addresses = [
 
 // let firstAddress = addresses[0]
 // let secondAddress = addresses[1]
-let trueCurrentAddress = { currentAddress: 'true'}
-let falseCurrentAddress = { currentAddress: 'false' }
+let trueCurrentAddress = { currentAddress: true}
+let falseCurrentAddress = { currentAddress: false }
 
 // let trueAddress = {...trueCurrentAddress, ...firstAddress}
 // console.log(trueAddress)
